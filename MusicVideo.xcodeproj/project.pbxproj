@@ -16,12 +16,12 @@
 
 /* Begin PBXFileReference section */
 		D3854AB71D47FA07002375A0 /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3854ABA1D47FA07002375A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3854ABA1D47FA07002375A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MusicVideo/AppDelegate.swift; sourceTree = "<group>"; };
 		D3854ABC1D47FA07002375A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3854ABF1D47FA07002375A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D3854AC11D47FA07002375A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3854AC11D47FA07002375A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MusicVideo/Assets.xcassets; sourceTree = "<group>"; };
 		D3854AC41D47FA07002375A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D3854AC61D47FA07002375A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3854AC61D47FA07002375A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MusicVideo/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +38,7 @@
 		D3854AAE1D47FA07002375A0 = {
 			isa = PBXGroup;
 			children = (
+				D3854ACF1D4801C1002375A0 /* Supporting Files */,
 				D3854AB91D47FA07002375A0 /* MusicVideo */,
 				D3854AB81D47FA07002375A0 /* Products */,
 			);
@@ -54,14 +55,45 @@
 		D3854AB91D47FA07002375A0 /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
-				D3854ABA1D47FA07002375A0 /* AppDelegate.swift */,
-				D3854ABC1D47FA07002375A0 /* ViewController.swift */,
-				D3854ABE1D47FA07002375A0 /* Main.storyboard */,
-				D3854AC11D47FA07002375A0 /* Assets.xcassets */,
+				D3854ACC1D480197002375A0 /* Model */,
+				D3854ACD1D4801A5002375A0 /* Controller */,
+				D3854ACE1D4801B3002375A0 /* View */,
 				D3854AC31D47FA07002375A0 /* LaunchScreen.storyboard */,
-				D3854AC61D47FA07002375A0 /* Info.plist */,
 			);
 			path = MusicVideo;
+			sourceTree = "<group>";
+		};
+		D3854ACC1D480197002375A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D3854ACD1D4801A5002375A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3854ABC1D47FA07002375A0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D3854ACE1D4801B3002375A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3854ABE1D47FA07002375A0 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D3854ACF1D4801C1002375A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3854AC11D47FA07002375A0 /* Assets.xcassets */,
+				D3854AC61D47FA07002375A0 /* Info.plist */,
+				D3854ABA1D47FA07002375A0 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
