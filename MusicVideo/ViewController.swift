@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     
 //        // call API with trailing closure
 //        let api = APIManager()
-//        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json") {
+//        api.loadData
+//    ("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json") {
 //                (result:String) in
 //                print(result)
 //            }
@@ -37,7 +38,6 @@ class ViewController: UIViewController {
         }
         alert.addAction(okAction)
         self.presentViewController(alert, animated: true, completion: nil)
-        
         print(result)
     }
 }
