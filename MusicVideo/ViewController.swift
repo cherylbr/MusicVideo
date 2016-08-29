@@ -29,15 +29,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=50/json",completion: didLoadData)
     }
     
-//        // call API with trailing closure
-//        let api = APIManager()
-//        api.loadData
-//    ("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json") {
-//                (result:String) in
-//                print(result)
-//            }
-
-//    )
     
     func didLoadData(videos: [Videos]) {
         

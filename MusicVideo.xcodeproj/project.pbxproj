@@ -16,6 +16,7 @@
 		D3854AD41D492297002375A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854AD31D492297002375A0 /* Constants.swift */; };
 		D3854AD61D49268F002375A0 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854AD51D49268F002375A0 /* MusicVideo.swift */; };
 		D3854ADB1D4A78E3002375A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D3854ADA1D4A78E3002375A0 /* Reachability.m */; };
+		D3854B0C1D74BD14002375A0 /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3854B0B1D74BD14002375A0 /* MusicVideoTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D3854AD81D4A78A6002375A0 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		D3854AD91D4A78E2002375A0 /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D3854ADA1D4A78E3002375A0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D3854B0B1D74BD14002375A0 /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		D3854ACD1D4801A5002375A0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D3854B0B1D74BD14002375A0 /* MusicVideoTVC.swift */,
 				D3854ABC1D47FA07002375A0 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3854B0C1D74BD14002375A0 /* MusicVideoTVC.swift in Sources */,
 				D3854AD11D480CF0002375A0 /* APIManager.swift in Sources */,
 				D3854ABD1D47FA07002375A0 /* ViewController.swift in Sources */,
 				D3854AD61D49268F002375A0 /* MusicVideo.swift in Sources */,
@@ -360,6 +364,7 @@
 				D3854ACB1D47FA07002375A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
