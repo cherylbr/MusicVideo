@@ -1,5 +1,5 @@
 //
-//  MusicVideoTVCTableViewController.swift
+//  MusicVideoTVC.swift
 //  MusicVideo
 //
 //  Created by Cheryl Broder on 29/08/2016.
@@ -30,10 +30,10 @@ class MusicVideoTVC: UITableViewController {
         
         self.videos = videos
         
-        for item in videos {
-            print ("name = \(item.vName)")
-            
-        }
+//        for item in videos {
+//            print ("name = \(item.vName)")
+//
+//        }
         
         for (index, item) in videos.enumerate() {
             print("\(index) name = \(item.vName)")
@@ -44,7 +44,8 @@ class MusicVideoTVC: UITableViewController {
     
     func reachabilityStatusChanged() {
         switch reachabilityStatus {
-        case NOACCESS : view.backgroundColor = UIColor.redColor()
+        case NOACCESS :
+        //view.backgroundColor = UIColor.redColor()
         dispatch_async(dispatch_get_main_queue()) {
             
         
@@ -74,7 +75,7 @@ class MusicVideoTVC: UITableViewController {
             
             
         default:
-            view.backgroundColor = UIColor.greenColor()
+            //view.backgroundColor = UIColor.greenColor()
             if videos.count > 0 {
                 print("Do not refresh API")
             }
@@ -88,7 +89,7 @@ class MusicVideoTVC: UITableViewController {
     func runAPI() {
         // call API with callback function (completion handler)
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=50/json",completion: didLoadData)
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=200/json",completion: didLoadData)
     }
     
     
@@ -98,6 +99,10 @@ class MusicVideoTVC: UITableViewController {
     
 
     // MARK: - Table view data source
+    
+//    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return 132
+//    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -109,15 +114,16 @@ class MusicVideoTVC: UITableViewController {
         return videos.count
     }
 
+    private struct storyboard {
+        static let cellReuseIdentifier = "cell"
+        
+    }
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(storyboard.cellReuseIdentifier, forIndexPath: indexPath) as! MusicViewTableViewCell
 
-        let video = videos[indexPath.row]
-        
-        cell.textLabel?.text = ("\(indexPath.row + 1)")
-        
-        cell.detailTextLabel?.text = video.vName
+        cell.video = videos[indexPath.row]
 
         return cell
     }
