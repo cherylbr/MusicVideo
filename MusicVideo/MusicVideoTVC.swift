@@ -30,11 +30,6 @@ class MusicVideoTVC: UITableViewController {
         
         self.videos = videos
         
-//        for item in videos {
-//            print ("name = \(item.vName)")
-//
-//        }
-        
         for (index, item) in videos.enumerate() {
             print("\(index) name = \(item.vName)")
         }
@@ -45,7 +40,7 @@ class MusicVideoTVC: UITableViewController {
     func reachabilityStatusChanged() {
         switch reachabilityStatus {
         case NOACCESS :
-        //view.backgroundColor = UIColor.redColor()
+        
         dispatch_async(dispatch_get_main_queue()) {
             
         
@@ -75,7 +70,7 @@ class MusicVideoTVC: UITableViewController {
             
             
         default:
-            //view.backgroundColor = UIColor.greenColor()
+            
             if videos.count > 0 {
                 print("Do not refresh API")
             }
